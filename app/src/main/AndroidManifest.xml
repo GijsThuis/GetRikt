@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gijs.getrikt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PickPlayers"
+            android:label="@string/title_activity_pick_players"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rankings"
+            android:label="@string/title_activity_rankings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameModeOverview"
+            android:label="@string/title_activity_game_mode_overview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddPlayer"
+            android:label="@string/title_activity_add_player"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlayGame"
+            android:label="@string/title_activity_play_game"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
