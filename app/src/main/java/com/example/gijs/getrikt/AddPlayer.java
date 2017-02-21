@@ -16,8 +16,7 @@ import android.widget.TextView;
 
 
 public class AddPlayer extends AppCompatActivity {
-
-    //HOI APSCAL
+    
     String addPlayerString;
     SharedPreferences sharedPreferences;
     EditText textFieldNewPlayer;
@@ -35,7 +34,7 @@ public class AddPlayer extends AppCompatActivity {
 
         addPlayerString = "DefaultName";
         tfbutton = (Button) findViewById(R.id.button_1);
-        textview_1 = (TextView) findViewById(R.id.textView_1);
+        textview_1 = (TextView) findViewById(R.id.id.textView_1);
         textview_1String = textview_1.toString();
 
 
