@@ -43,10 +43,16 @@ public class GameModeOverview extends AppCompatActivity {
         LinkedList<RondeType> doos = rondeTypeDoos.getDoos();
         ListView myListView = (ListView) findViewById(R.id.listview_1);
 
+        // All gamemodes hardcoded in an array
         String [] array = {"","REGULIERE SPELLEN", doos.get(0).toString() , doos.get(1).toString(), doos.get(2).toString(), "PASSPELLEN",doos.get(3).toString()};
+        // Casting from array to list
         ArrayList<String> list = new ArrayList<String>(Arrays.asList(array));
+
+        //Adapter used for casting from list to listview
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list);
         myListView.setAdapter(adapter);
+
+        //Initialising onClick listener
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

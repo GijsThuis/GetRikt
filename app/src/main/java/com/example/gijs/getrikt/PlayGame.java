@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import java.util.LinkedList;
+
 public class PlayGame extends AppCompatActivity {
 
     @Override
@@ -27,7 +29,10 @@ public class PlayGame extends AppCompatActivity {
         });
 
         Intent i = getIntent();
-        DefaultSpeler speler = (DefaultSpeler) i.getParcelableExtra("spelernaam");
+      //  DefaultSpeler speler = (DefaultSpeler) i.getParcelableExtra("spelernaam");
+        LinkedList<DefaultSpeler> deelnemers =  (LinkedList<DefaultSpeler>) i.getParcelableExtra("deelnemers");
     }
+
+
 
 }

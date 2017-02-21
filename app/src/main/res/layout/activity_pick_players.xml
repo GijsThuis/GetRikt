@@ -35,23 +35,39 @@
             android:id="@+id/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_AlignParentLeft="true"/>
+            android:layout_alignParentLeft="true"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"/>
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/CheckBox"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:text="@string/name" />
 
         <TextView
             android:id="@+id/name_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:below="@+id/name"
+            android:layout_below="@+id/name"
             android:layout_toRightOf="@+id/CheckBox"
             android:textSize="12sp"
-            android:textStyle="italic"/>
+            android:textStyle="italic"
+            android:text="@string/name_2" />
+
+        <Button
+            android:id="@+id/oefenpotje"
+            android:layout_width="30dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/name_2"
+            android:onClick="startTestPotje"
+            android:text="@string/speelpotje" />
 
 
 
